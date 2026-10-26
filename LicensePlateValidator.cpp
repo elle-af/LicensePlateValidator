@@ -58,15 +58,6 @@ bool accepts(string x)
         valid = false;
     }
 
-    // number cannot start with 000
-    if (x.length() >= 3 &&
-        x[0] == '0' &&
-        x[1] == '0' &&
-        x[2] == '0')
-    {
-        valid = false;
-    }
-
     // Check first and last alphanumeric characters
     char first = '\0';
     char last = '\0';
